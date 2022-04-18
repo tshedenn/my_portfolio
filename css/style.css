@@ -16,11 +16,36 @@ header,footer{
 
 }
 
-aside{
-  background-color: blue;
-  color: white;
+.sidebar-right{
+  background-color: #ededed;
+  color: black;
+  padding: 2em;
 
 }
+
+.widget{
+  background-color: white;
+  margin-bottom: 2em;
+
+}
+.widget-content{
+  padding: .5em 2em;
+}
+
+.sidebar-right ul{
+  list-style-type: none;
+  padding-left:1em;
+}
+
+.sidebar-right ul a{
+  display: block;
+  padding-bottom: .4em;
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 h1{
   color: red;
   margin: 0;
@@ -28,6 +53,20 @@ h1{
 
 p{
   margin: 0;
+}
+
+footer{
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+
+
+}
+header{
+  background-color: black;
 }
 .site-header{
   height: 400px;
@@ -62,6 +101,42 @@ p{
   background-color: yellow;
 }
 
+.main-menu ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: .6em 1em;
+  display: block;
+  transition: all .5s ease;
+
+}
+
+.main-menu li a:hover{
+  background-color:black;
+  color: red;
+}
+@media screen and (min-width: 810px) {
+  .main-menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .main-menu ul li{
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 0;
+  }
+  
+}
+
 .main-content-area{
   padding: 2em;
 }
@@ -93,6 +168,7 @@ img{
   width: 100%;
   height: auto;
 }
+
 
 .gallery-imgs{
   display: flex;
@@ -128,23 +204,27 @@ img{
   flex-basis:250px;
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width:1120px)
+{
   .content-area{
     display: flex;
   }
-  aside{
+
+  .sidebar-right
+  {
     flex: 0 0 320px;
   }
 }
 
-@media screen and (min-width: 1120px) {
-  .site-title{
+@media screen and (min-width:1120px) {
+  .site-title
+  {
     font-size: 4em;
   }
   
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width:800px) {
 
   .posts{
     display: flex;
@@ -168,6 +248,19 @@ img{
   .post-full{
     flex-basis: 100%;
   } 
+  
+}
+
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+  .sidebar-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  .widget{
+    flex-basis: 48.8%;
+  }
   
 }
 
