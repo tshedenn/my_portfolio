@@ -9,6 +9,7 @@ body{
   background-color: #ededed;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 2.5rem;
 }
 header,footer{
   background-color: black;
@@ -16,7 +17,7 @@ header,footer{
 
 }
 
-.sidebar-right{
+aside{
   background-color: #ededed;
   color: black;
   padding: 2em;
@@ -26,22 +27,21 @@ header,footer{
 .widget{
   background-color: white;
   margin-bottom: 2em;
+  border-radius: 7%;
 
 }
 .widget-content{
   padding: .5em 2em;
 }
 
-.sidebar-right ul{
-  list-style-type: none;
+aside blockquote{
   padding-left:1em;
 }
 
-.sidebar-right ul a{
+aside blockquote{
   display: block;
   padding-bottom: .4em;
   color:black;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -62,13 +62,9 @@ footer{
   padding: 1.5em;
   font-size: 1.2em;
   font-weight: bold;
-
-
 }
+
 header{
-  background-color: black;
-}
-.site-header{
   height: 400px;
   display: flex;
   flex-flow: column;
@@ -95,19 +91,19 @@ header{
   margin-top: -.8;
   font-style: italic;
 }
-.main-menu{
+nav{
   padding: 1em 1em;
   color: black;
   background-color: yellow;
 }
 
-.main-menu ul{
+nav ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.main-menu li a{
+nav li a{
   text-decoration: none;
   color: black;
   font-size: 1.1em;
@@ -118,18 +114,18 @@ header{
 
 }
 
-.main-menu li a:hover{
+nav li a:hover{
   background-color:black;
   color: red;
 }
 @media screen and (min-width: 810px) {
-  .main-menu ul{
+  nav ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
   }
-  .main-menu ul li{
+  nav ul li{
     flex-grow: 1;
     flex-basis: auto;
     flex-shrink: 0;
@@ -210,7 +206,7 @@ img{
     display: flex;
   }
 
-  .sidebar-right
+  aside
   {
     flex: 0 0 320px;
   }
@@ -252,7 +248,7 @@ img{
 }
 
 @media screen and (min-width: 810px) and (max-width: 1120px) {
-  .sidebar-right{
+  aside{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
