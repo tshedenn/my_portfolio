@@ -160,7 +160,7 @@ aside{
   margin: 1rem 2rem;
   background-color: aliceblue;
   padding: 1.2rem;
-  /* max-height:max-content; */
+  min-height: 200px;
 }
 footer{
 /* border: 1rem solid orange; */
