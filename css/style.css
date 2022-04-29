@@ -80,6 +80,24 @@ figure{
 figcaption{
   color: blue;
 }
+
+
+.redMoreButton{
+  background-color:wheat;
+  border: none;
+  color:rgb(241, 136, 8);
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 10%;
+  margin: .5rem;
+}
+
+ol{
+  display: none;
+}
 aside{
   margin: 1rem 2rem;
   background-color: rgb(252, 253, 255);
@@ -101,6 +119,8 @@ bottom: -1;
 width: 100%;
 
 }
+
+
 @media screen and (max-width: 810px) {
   header nav li a{
     font-size: 10px;
@@ -141,7 +161,6 @@ width: 100%;
       flex-wrap: wrap;
     }
 }
-
 
 @media screen and (max-width:250px) {
 .main-container aside{
@@ -237,4 +256,6 @@ width: 100%;
     width: 150px; 
   }
 }
+
+
 
