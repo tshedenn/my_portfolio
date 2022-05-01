@@ -23,7 +23,7 @@ header h1{
   color: rgb(0, 109, 0); 
 }
 header h2{
-  color: aliceblue;
+  color:sandybrown;
 }
 header nav{
   align-self: flex-end;
@@ -55,25 +55,27 @@ figure{
   padding: 1rem;
   transition: all 0.2s ease-in-out;
 }
+.main-container h3{
+  font-size: 20px;
+  color:tomato;
+}
 .main-container .index-section article figure img{
   max-width:300px;
   max-height:320px;
-  border-radius: 2%; 
-  
+  border-radius: 2%;  
 }
-
 .main-container .index-section article figure:hover
 {
 	-webkit-transform: scale(1.10);
 	-ms-transform: scale(1.10);
 	transform: scale(1.10);
 }
-.main-container .index-section article{
+/* .main-container .index-section article{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-}
+} */
 .main-container .index-section article hr{
   width: 35%;
 }
@@ -83,14 +85,14 @@ figcaption{
 
 
 .redMoreButton{
-  background-color:wheat;
+  background-color:tan;
   border: none;
-  color:rgb(241, 136, 8);
+  color:darkblue;
   padding: 8px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 10%;
   margin: .5rem;
 }
@@ -103,8 +105,14 @@ aside{
   background-color: rgb(252, 253, 255);
   padding: 1.2rem;
   border-left: #f0eded solid .1rem;
-  
-
+}
+aside h4{
+  font-size: 22px;
+  color:brown;
+}
+aside blockquote{
+  font-size: 18px;
+  color: crimson;
 }
 footer{
 background-color:rgb(20, 20, 20);
@@ -226,9 +234,8 @@ width: 100%;
 }
 @media screen and (min-width:810px) {
     .about-section{
-      height: 400px;
       background-color:snow;
-      padding: 10rem;
+      padding: 2rem;
       margin: 3rem;
       border:whitesmoke .1rem solid;
     
@@ -255,6 +262,10 @@ width: 100%;
   .about-aside video{
     width: 150px; 
   }
+}
+
+address p a{
+  color:limegreen;
 }
 
 
